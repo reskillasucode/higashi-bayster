@@ -15,3 +15,5 @@ class Land(models.Model):
     status = models.IntegerField(choices=STATUS_CHOICE, default=0)
     def __str__(self):
         return self.title
+    class Meta:
+        app_label = 'land'
